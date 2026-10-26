@@ -1,0 +1,92 @@
+{
+  "created_at": "2026-10-26T10:42:41.166923+00:00",
+  "features": [
+    "dst_port",
+    "packet_size",
+    "send_rate",
+    "syn",
+    "ack"
+  ],
+  "labels": [
+    "Temiz",
+    "DDoS",
+    "Brute Force",
+    "Port Scan"
+  ],
+  "rows": 315342,
+  "train_rows": 252273,
+  "test_rows": 63069,
+  "accuracy": 0.9889327561876675,
+  "classification_report": {
+    "Temiz": {
+      "precision": 0.9895659220989718,
+      "recall": 0.97685,
+      "f1-score": 0.9831668469919231,
+      "support": 20000.0
+    },
+    "DDoS": {
+      "precision": 0.99222216682455,
+      "recall": 0.99505,
+      "f1-score": 0.9936340714481864,
+      "support": 20000.0
+    },
+    "Brute Force": {
+      "precision": 0.9566318455207344,
+      "recall": 0.9846855653307266,
+      "f1-score": 0.970456005138086,
+      "support": 3069.0
+    },
+    "Port Scan": {
+      "precision": 0.9901044256588761,
+      "recall": 0.99555,
+      "f1-score": 0.9928197456993268,
+      "support": 20000.0
+    },
+    "accuracy": 0.9889327561876675,
+    "macro avg": {
+      "precision": 0.9821310900257831,
+      "recall": 0.9880338913326817,
+      "f1-score": 0.9850191673193807,
+      "support": 63069.0
+    },
+    "weighted avg": {
+      "precision": 0.9889764135399498,
+      "recall": 0.9889327561876675,
+      "f1-score": 0.9889286775207712,
+      "support": 63069.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      19537,
+      152,
+      115,
+      196
+    ],
+    [
+      83,
+      19901,
+      16,
+      0
+    ],
+    [
+      43,
+      1,
+      3022,
+      3
+    ],
+    [
+      80,
+      3,
+      6,
+      19911
+    ]
+  ],
+  "class_counts": {
+    "DDoS": 100000,
+    "Port Scan": 100000,
+    "Temiz": 100000,
+    "Brute Force": 15342
+  },
+  "seed": 42
+}
